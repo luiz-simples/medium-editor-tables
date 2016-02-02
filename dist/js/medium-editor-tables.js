@@ -3,7 +3,9 @@
   if (typeof module === 'object') {
     module.exports = factory;
   } else if (typeof define === 'function' && define.amd) {
-    define(factory);
+    define(function() {
+        return factory;
+    });
   } else {
     root.MediumEditorTable = factory;
   }
@@ -278,7 +280,6 @@ Builder.prototype = {
 
         var grid = this._root.childNodes[0];
         this._root.insertBefore(this._toolbar, grid);
-        console.log(this._root);
     },
 
     getElement: function () {
