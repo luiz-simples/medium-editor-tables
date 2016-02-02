@@ -1,6 +1,6 @@
 {
   "name": "medium-editor-tables",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "Davi Ferreira <hi@daviferreira.com>",
   "description": "MediumEditor extension to allow tables.",
   "main": "dist/js/medium-editor-tables.js",
@@ -47,6 +47,6 @@
     "start": "open ./demo/index.html"
   },
   "peerDependencies": {
-    "medium-editor": "^5.5.1"
+    "medium-editor": "^5.14.0"
   }
 }
